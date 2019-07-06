@@ -10,6 +10,10 @@ import org.slf4j.LoggerFactory;
 
 public class CommandExecutor {
 	
+	/**
+	 * Currently, I can't pass all unit tests for this class when using logger as final and just getLogger one time.<br/>
+	 * The logger need to get again when run a unit test.
+	 */
 	private static Logger logger = LoggerFactory.getLogger(CommandExecutor.class);
 	
 	public static void execute(String command) {
